@@ -1,8 +1,5 @@
 import '@/styles/globals.scss'
 import { ToastContainer } from 'react-toastify'
-import { appWithTranslation } from 'next-i18next'
-
-import appWithSession from '@/hoc/appWithSession'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -23,4 +20,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default appWithSession(appWithTranslation(MyApp))
+export default MyApp
