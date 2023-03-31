@@ -1,10 +1,14 @@
 import '@/styles/globals.scss'
 import { ToastContainer } from 'react-toastify'
 
+import { AuthProvider } from '@/contexts/auth'
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <AuthProvider>
+        <Component {...pageProps} />
+      </AuthProvider>
       <ToastContainer
         position="bottom-left"
         autoClose={5000}
