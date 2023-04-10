@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <title>Home - VGDB</title>
       </Head>
       Home Page | Hello World
+      <Header />
       <main>
         {/* Banner */}
         <section>
@@ -20,7 +22,7 @@ export default function Home() {
           {/* Row */}
         </section>
       </main>
-
+      {/* Modal */}
     </div>
   )
 }
