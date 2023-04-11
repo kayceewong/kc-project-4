@@ -16,6 +16,7 @@
     "firebase": "^9.19.0",
     "formik": "^2.2.9",
     "immer": "^9.0.21",
+    "isomorphic-unfetch": "^4.0.2",
     "next": "^13.3.0",
     "next-i18next": "^13.2.2",
     "react": "^18.2.0",
