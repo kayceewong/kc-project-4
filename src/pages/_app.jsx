@@ -1,4 +1,4 @@
-import styles from '@/styles/globals.scss'
+// import styles from '@/styles/globals.scss'
 import { ToastContainer } from 'react-toastify'
 
 import { AuthProvider } from '@/contexts/auth'

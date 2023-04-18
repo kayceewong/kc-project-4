@@ -1,8 +1,7 @@
 import Head from 'next/head'
-// import Image from 'next/image'
-
-import Header from '../components/Header'
-import Banner from '../components/Banner'
+// import { Layout } from '@/components/Layout'
+import { Platforms } from '@/components/Platforms'
+import { Navbar } from '@/components/Navbar'
 
 export default function Home() {
   return (
@@ -10,20 +9,14 @@ export default function Home() {
       <Head>
         <title>Home - VGDB</title>
       </Head>
-      Home Page | Hello World
-      <Header />
+
+      <Navbar />
       <main>
-        <Banner />
-        <section>
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-        </section>
+
+        <Platforms />
+
       </main>
-      {/* Modal */}
+
     </div>
   )
 }
