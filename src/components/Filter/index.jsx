@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { BiChevronDown } from 'react-icons/bi'
-import { useOnClickOutside } from 'hooks'
+import { useOnClickOutside } from '@/hooks'
 import { AnimatePresence, motion } from 'framer-motion'
 import cn from 'classnames'
 import { Genres } from '../../utils/Genres'

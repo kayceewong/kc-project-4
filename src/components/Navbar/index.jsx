@@ -14,7 +14,7 @@ export const Navbar = () => (
         <div className={css.partition}>
           <Menu />
           <Link href="/" className={css.logo} passHref>
-            <Image src="/images/KC Logo White.png" alt="Logo" width="100" height="100" />
+            <Image src="/images/KC Logo.png" alt="Logo" width="100" height="100" />
           </Link>
           <DesktopRoutes />
         </div>

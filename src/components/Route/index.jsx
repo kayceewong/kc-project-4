@@ -7,11 +7,13 @@ export const Route = ({ route }) => {
   if (!route) return null
 
   return (
-    (<Link href={url} className={css.route}>
+    (
+      <Link href={url} className={css.route}>
 
-      {title}
-      {icon}
+        {title}
+        {icon}
 
-    </Link>)
-  );
+      </Link>
+    )
+  )
 }

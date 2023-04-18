@@ -16,32 +16,32 @@ const data = [
     icon: <SiPlaystation />,
     darkClr: '#00a6fb',
     lightClr: '#006FCD',
-    animDelay: 0,
-    key: 'Ah7^k'
+    animDelay: 0
+
   },
   {
     title: 'Xbox Series X/S',
     icon: <SiXbox />,
     darkClr: '#70e000',
     lightClr: '#107C11',
-    animDelay: 0.2,
-    key: 'LkU%'
+    animDelay: 0.2
+
   },
   {
     title: 'Nintendo Switch',
     icon: <SiNintendoswitch />,
     darkClr: '#e60012',
     lightClr: '#e60012',
-    animDelay: 0.4,
-    key: 'lK&v'
+    animDelay: 0.4
+
   },
   {
     title: 'PC Gaming',
     icon: <SiPcgamingwiki />,
     darkClr: '#dee2e6',
     lightClr: '#6c757d',
-    animDelay: 0.6,
-    key: 'Xe$#'
+    animDelay: 0.6
+
   }
 ]
 

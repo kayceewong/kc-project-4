@@ -10,7 +10,7 @@ export const fetchTrending = `${BASE_URL}/games?dates=${today.getFullYear()}-${(
 export const fetchGameSlug = (slug) => `${BASE_URL}/games/${slug}?&key=${API_KEY}`
 
 // get all games
-export const fetchAllGames = (page) => `${BASE_URL}/games?page_size=20&key=${API_KEY}&page=${page || 1}`
+export const fetchAllGames = `${BASE_URL}/games?key=${API_KEY}&ordering=-added&page_size=12`
 
 // get game screenshots
 export const fetchGameScreenshots = (slug) => `${BASE_URL}/games/${slug}/screenshots?&key=${API_KEY}`
