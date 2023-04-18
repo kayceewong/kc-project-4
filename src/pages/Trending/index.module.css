@@ -1,0 +1,19 @@
+.container {
+  padding-inline: 1rem;
+}
+
+.image {
+  max-width: 5rem;
+  margin: auto;
+}
+
+.header {
+  margin-top: var(--gap-5) !important;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: var(--gap-1);
+}
+
+@media only screen and (min-width: 600px) {}

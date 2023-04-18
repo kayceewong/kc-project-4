@@ -16,7 +16,7 @@ export default function Explore(props) {
     <Layout
       title="VGDB | Explore"
       desc="Start exploring!"
-      url="explore"
+      url="Explore"
     >
       <Container gap>
         <PaginatedGames itemsPerPage={12} initial={props.data} />

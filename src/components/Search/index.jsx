@@ -2,9 +2,10 @@ import { FiSearch } from 'react-icons/fi'
 import { ImSpinner2 } from 'react-icons/im'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import { useState, useRef } from 'react'
-import { useOnClickOutside } from 'hooks'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
+
+import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { fetchGamesSearch } from '../../utils/Requests'
 import { Container } from '../Container'
 
@@ -87,12 +88,18 @@ export const Search = () => {
                 />
               </div>
               {results.map((game) => (
-                <Link href={`/games/${game.slug}`} key={game.id}>
-                  <a className={css.result} onClick={() => setOpen(false)}>
+                (
+                  <Link
+                    href={`/games/${game.slug}`}
+                    key={game.id}
+                    className={css.result}
+                    onClick={() => setOpen(false)}
+                    passHref
+                  >
                     <FaLongArrowAltRight />
                     {game.name}
-                  </a>
-                </Link>
+                  </Link>
+                )
               ))}
               {noResult && (
                 <p className={css.error}>

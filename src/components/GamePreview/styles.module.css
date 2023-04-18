@@ -1,0 +1,52 @@
+.image {
+  border-radius: var(--br-2);
+  height: 12rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-2);
+}
+
+.fullimage {
+  margin: 0;
+}
+
+.title {
+  display: block;
+  font-weight: 500;
+}
+
+.card {
+  border-radius: var(--br-2);
+  position: relative;
+}
+
+.absolutetitle {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  background-image: linear-gradient(to right,
+      rgba(13, 17, 23, 1),
+      rgba(13, 17, 23, 1),
+      rgba(13, 17, 23, 0.1),
+      rgba(13, 17, 23, 0));
+  border-bottom-right-radius: var(--br-2);
+  border-bottom-left-radius: var(--br-2);
+}
+
+.added {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  color: rgb(197, 227, 253);
+}
+
+.added svg {
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+}

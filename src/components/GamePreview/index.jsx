@@ -20,32 +20,34 @@ export const GamePreview = ({ game, fullsize }) => {
 
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <Link href={`/games/${slug}`}>
-        <a className={cn(css.card, fullsize && css.fullcard)}>
-          <div className={cn(css.image, fullsize && css.fullimage)}>
-            {image && (
-              <Image
-                src={image}
-                alt={name}
-                width={100}
-                height={100}
-                placeholder={blurDataURL && 'blur'}
-                blurDataURL={blurDataURL}
-              />
+      <Link
+        href={`/games/${slug}`}
+        className={cn(css.card, fullsize && css.fullcard)}>
 
-            )}
-          </div>
-          <span className={cn(css.title, fullsize && css.absolutetitle)}>
-            {name}
-            {fullsize && (
-              <span className={css.added}>
-                <FaEye />
-                {added}
-              </span>
-            )}
-          </span>
-        </a>
+        <div className={cn(css.image, fullsize && css.fullimage)}>
+          {image && (
+            <Image
+              src={image}
+              alt={name}
+              width={100}
+              height={100}
+              placeholder={blurDataURL && 'blur'}
+              blurDataURL={blurDataURL}
+            />
+
+          )}
+        </div>
+        <span className={cn(css.title, fullsize && css.absolutetitle)}>
+          {name}
+          {fullsize && (
+            <span className={css.added}>
+              <FaEye />
+              {added}
+            </span>
+          )}
+        </span>
+
       </Link>
     </ErrorBoundary>
-  )
+  );
 }

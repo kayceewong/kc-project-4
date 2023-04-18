@@ -1,24 +1,86 @@
 // @import "~bootstrap/scss/bootstrap";
 // @import "~react-toastify/dist/ReactToastify.min.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* html, body, heading */
-@layer base {
-  body {
-    @apply bg-black text-white
-  }
-
-  header {
-    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* custom classNames */
-@layer components {
-  .headerLink {
-    @apply cursor-pointer text-sm font-light text-white hover:text-red-300
+body {
+  font-family: var(--ff-serif);
+  background-color: var(--background-1);
+  color: var(--foreground-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+a {
+  all: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+
+// img,
+// picutre {
+//   max-width: 100%;
+//   display: block;
+// }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  box-shadow: var(--foreground-1) 0px 0px 0px 2px !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+/* pagination */
+.disabled {
+  opacity: 0.1;
+}
+
+.disabled a {
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

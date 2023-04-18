@@ -21,14 +21,14 @@ export const LinkButton = ({
   href,
   blank
 }) => (
-  <Link href={href}>
-    <a
-      style={{ margin }}
-      className={cn(css.btn, css.link, sx)}
-      onClick={onClick}
-      target={blank && '_blank'}
-    >
-      {children}
-    </a>
-  </Link>
+  (<Link
+    href={href}
+    style={{ margin }}
+    className={cn(css.btn, css.link, sx)}
+    onClick={onClick}
+    target={blank && '_blank'}>
+
+    {children}
+
+  </Link>)
 )

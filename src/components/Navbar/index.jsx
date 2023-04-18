@@ -13,9 +13,8 @@ export const Navbar = () => (
       <nav className={css.nav}>
         <div className={css.partition}>
           <Menu />
-          <Link href="/" className={css.logo}>
-            {/* <Image src="/images/KC Logo White.png" alt="Logo" width="100" height="100" /> */}
-            test
+          <Link href="/" className={css.logo} passHref>
+            <Image src="/images/KC Logo White.png" alt="Logo" width="100" height="100" />
           </Link>
           <DesktopRoutes />
         </div>
@@ -33,7 +32,7 @@ const DesktopRoutes = () => (
     {Routes.map((route) => (
       <li key={route.key}>
         <Link href={route.url}>
-          <a>{route.title}</a>
+          {route.title}
         </Link>
       </li>
     ))}

@@ -1,0 +1,51 @@
+.nav {
+  max-width: 60rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--background-1);
+}
+
+.partition {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  box-shadow: var(--boxshadow-1);
+  background: var(--background-1);
+}
+
+.logo {
+  font-size: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: var(--br-2);
+  overflow: hidden;
+}
+
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: var(--zindex-nav);
+}
+
+.desktopRoutes {
+  display: none;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 650px) {
+  .desktopRoutes {
+    display: flex;
+    gap: 1rem;
+    text-transform: capitalize;
+  }
+}

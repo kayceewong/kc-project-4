@@ -1,13 +1,23 @@
-// import styles from '@/styles/globals.scss'
+// import '@/styles/Home.module.scss'
+import '@/styles/globals.scss'
+import '@/styles/nprogress.scss'
+import nprogress from 'nprogress'
+import Router from 'next/router'
+import { ThemeProvider } from 'next-themes'
+import { AuthProvider } from '@/contexts/auth'
 import { ToastContainer } from 'react-toastify'
 
-import { AuthProvider } from '@/contexts/auth'
+Router.events.on('routeChangeStart', () => nprogress.start())
+Router.events.on('routeChangeComplete', () => nprogress.done())
+Router.events.on('routeChangeError', () => nprogress.done())
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <AuthProvider>
-        <Component {...pageProps} />
+        <ThemeProvider>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </AuthProvider>
       <ToastContainer
         position="bottom-left"

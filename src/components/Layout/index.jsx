@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo'
-import Navbar from '../Navbar'
+import { Navbar } from '../Navbar'
 import css from './styles.module.css'
 
 export const Layout = ({ children, title, desc, image, url }) => {
-  const og = 'public/images/Game.png'
+  const og = '/images/Game.png'
   return (
     <>
       <NextSeo
