@@ -21,7 +21,7 @@ export const GamePreview = ({ game, fullsize }) => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Link
-        href={`/games/${slug}`}
+        href={`/Games/${slug}`}
         className={cn(css.card, fullsize && css.fullcard)}
       >
 
