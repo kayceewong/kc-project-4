@@ -1,12 +1,11 @@
-import Image from 'next/image'
-import { getPlaiceholder } from 'plaiceholder'
 import { Layout } from '@/components/Layout'
 import { Container } from '@/components/Container'
-import { fetchGameSlug, fetchGameScreenshots } from '@/utils/Requests'
 import { Screenshots } from '@/components/Screenshots'
-import Page404 from '../404'
-
+import Image from 'next/image'
+import { getPlaiceholder } from 'plaiceholder'
+import { fetchGameSlug, fetchGameScreenshots } from '@/utils/Requests'
 import css from './styles.module.css'
+import Page404 from '../404'
 
 export async function getServerSideProps({ params }) {
   const [gameRes, screenshotsRes] = await Promise.all([
@@ -55,11 +54,11 @@ export default function GamePage(props) {
           <Image
             src={mainCover}
             alt={name}
-            layout="responsive"
-            width={500}
-            height={500 / 1.5}
+            layout="fill"
+            objectFit="cover"
             placeholder="blur"
             blurDataURL={props.base64}
+
           />
         </div>
         )}

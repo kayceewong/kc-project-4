@@ -17,3 +17,6 @@ export const fetchGameScreenshots = (slug) => `${BASE_URL}/games/${slug}/screens
 
 // search games
 export const fetchGamesSearch = (searchTerm) => `${BASE_URL}/games?key=${API_KEY}&search=${searchTerm}&page_size=10`
+
+// get high rated games
+export const fetchHighRatedGames = `${BASE_URL}/games?metacritic=90,100&page_size=38&ordering=-added&key=${API_KEY}`
