@@ -22,15 +22,16 @@ export const GamePreview = ({ game, fullsize }) => {
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Link
         href={`/games/${slug}`}
-        className={cn(css.card, fullsize && css.fullcard)}>
+        className={cn(css.card, fullsize && css.fullcard)}
+      >
 
         <div className={cn(css.image, fullsize && css.fullimage)}>
           {image && (
             <Image
               src={image}
               alt={name}
-              width={100}
-              height={100}
+              layout="fill"
+              objectFit="cover"
               placeholder={blurDataURL && 'blur'}
               blurDataURL={blurDataURL}
             />
@@ -49,5 +50,5 @@ export const GamePreview = ({ game, fullsize }) => {
 
       </Link>
     </ErrorBoundary>
-  );
+  )
 }

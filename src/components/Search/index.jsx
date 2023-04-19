@@ -82,7 +82,7 @@ export const Search = () => {
                 </div>
                 <input
                   type="text"
-                  placeholder="Start typing ..."
+                  placeholder="Search..."
                   className={css.input}
                   onChange={inputChanged}
                 />
@@ -90,7 +90,7 @@ export const Search = () => {
               {results.map((game) => (
                 (
                   <Link
-                    href={`/games/${game.slug}`}
+                    href={`/Games/${game.slug}`}
                     key={game.id}
                     className={css.result}
                     onClick={() => setOpen(false)}

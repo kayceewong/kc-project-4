@@ -22,7 +22,7 @@ export async function getServerSideProps({ params }) {
   const { base64 } = await getPlaiceholder(
     game.background_image
       ? game.background_image
-      : 'public/images/Game.png'
+      : 'https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg'
   )
 
   return { props: { game, base64, screenshots } }
@@ -51,16 +51,17 @@ export default function GamePage(props) {
           ))}
         </div>
         {mainCover && (
-          <div className={css.image}>
-            <Image
-              src={mainCover}
-              alt={name}
-              width={500}
-              height={500}
-              placeholder="blur"
-              blurDataURL={props.base64}
-            />
-          </div>
+        <div className={css.image}>
+          <Image
+            src={mainCover}
+            alt={name}
+            layout="responsive"
+            width={500}
+            height={500 / 1.5}
+            placeholder="blur"
+            blurDataURL={props.base64}
+          />
+        </div>
         )}
         <p className={css.desc}>{description}</p>
       </Container>

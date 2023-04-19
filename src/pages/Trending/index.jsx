@@ -48,7 +48,7 @@ export default function Trending(props) {
       <Layout
         title="VGDB | Trending"
         desc="Checkout the trending video games"
-        url="trending"
+        url="Trending"
       >
         <Container sx={css.header}>
           <h1 className={css.title}>Trending Right Now</h1>

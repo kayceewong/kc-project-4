@@ -1,4 +1,4 @@
-// import '@/styles/Home.module.scss'
+import '@/styles/variables.scss'
 import '@/styles/globals.scss'
 import '@/styles/nprogress.scss'
 import nprogress from 'nprogress'
