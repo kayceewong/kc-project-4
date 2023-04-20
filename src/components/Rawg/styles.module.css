@@ -1,0 +1,26 @@
+.title {
+  font-weight: 500;
+  margin-bottom: var(--gap-2);
+}
+
+.rawg {
+  background-color: var(--background-2);
+  border-radius: var(--br-2);
+  text-align: center;
+}
+
+.container {
+  background-color: var(--background-2);
+  padding: 1rem !important;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    background-color: transparent;
+  }
+
+  .rawg {
+    padding: 2rem;
+  }
+}
