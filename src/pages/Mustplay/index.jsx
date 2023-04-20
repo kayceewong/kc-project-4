@@ -9,7 +9,7 @@ import { fetchHighRatedGames } from '@/utils/Requests'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 import css from './index.module.css'
 
-function ErrorFallback({ error, resetErrorBoundary }) {
+function ErrorFallback({ error }) {
   return (
     <div role="alert">
       <p>Something went wrong:</p>
@@ -42,7 +42,7 @@ export async function getServerSideProps() {
 }
 
 export default function Mustplay(props) {
-  const [games, setGames] = useState(props.games || [])
+  const [games] = useState(props.games || [])
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handleForwardClick = () => {
