@@ -8,7 +8,7 @@ import css from './styles.module.css'
 const data = [
   {
     title: '',
-    image: '/images/Logo.png',
+    image: '/images/Banner.png',
     darkClr: '#dee2e6',
     lightClr: '#6c757d',
     animDelay: 0.6
