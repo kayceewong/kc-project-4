@@ -16,4 +16,18 @@
   margin-bottom: var(--gap-1);
 }
 
+.iconButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #797878;
+}
+
 @media only screen and (min-width: 600px) {}

@@ -30,6 +30,7 @@ export function Screenshots({ screenshots }) {
               <Image
                 src={sc.image}
                 alt=""
+                layout="responsive"
                 width={1000}
                 height={563}
                 className={css.image}

@@ -1,0 +1,42 @@
+.banner svg {
+  font-size: 5rem;
+  margin-bottom: var(--gap-2);
+}
+
+.banner {
+  font-size: var(--fs-700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--br-2);
+  padding: 0rem 1rem 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.banner-image-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 450px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

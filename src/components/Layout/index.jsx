@@ -25,13 +25,11 @@ export const Layout = ({ children, title, desc, image, url }) => {
           ],
           site_name: 'VGDB'
         }}
-
       />
       <Navbar />
       <main id="main" className={css.main}>
         {children}
       </main>
-
     </>
   )
 }

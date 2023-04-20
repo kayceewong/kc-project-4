@@ -1,9 +1,9 @@
-import { Layout } from '@/components/Layout'
 import { Container } from '@/components/Container'
+import { Layout } from '@/components/Layout'
 import { Screenshots } from '@/components/Screenshots'
-import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 import { fetchGameSlug, fetchGameScreenshots } from '@/utils/Requests'
+import Image from 'next/image'
 import css from './styles.module.css'
 import Page404 from '../404'
 
